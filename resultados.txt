@@ -1,0 +1,17 @@
+===== HEAP =====
+Insercao: 1.5882 ms
+Ordem: 4.3365 ms
+Comparacoes: 16220
+
+===== ABB =====
+Insercao: 3.5047 ms
+Ordem: 0.2775 ms
+Comparacoes: 10619
+Altura: 25
+
+===== AVL =====
+Insercao: 11.3619 ms
+Ordem: 0.5105 ms
+Comparacoes: 8730
+Altura: 12
+Rotacoes: 676
