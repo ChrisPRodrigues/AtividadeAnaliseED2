@@ -253,6 +253,9 @@ with open(
         f"Ordem: {tempo_heap_ordem:.4f} ms\n"
     )
     arquivo.write(
+        f"Prioritario: {tempo_heap_prioritario:.6f} ms\n"
+    )
+    arquivo.write(
         f"Comparacoes: {heap.comparacoes}\n\n"
     )
 
@@ -262,6 +265,9 @@ with open(
     )
     arquivo.write(
         f"Ordem: {tempo_abb_ordem:.4f} ms\n"
+    )
+    arquivo.write(
+        f"Prioritario: {tempo_abb_prioritario:.6f} ms\n"
     )
     arquivo.write(
         f"Comparacoes: {abb.comparacoes}\n"
@@ -276,6 +282,9 @@ with open(
     )
     arquivo.write(
         f"Ordem: {tempo_avl_ordem:.4f} ms\n"
+    )
+    arquivo.write(
+        f"Prioritario: {tempo_avl_prioritario:.6f} ms\n"
     )
     arquivo.write(
         f"Comparacoes: {avl.comparacoes}\n"
