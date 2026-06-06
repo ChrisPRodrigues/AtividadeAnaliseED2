@@ -104,6 +104,16 @@ class ABB:
         direita = self._altura(no.direita)
         return max(esquerda, direita) + 1
 
+    def maior(self):
+
+        atual = self.raiz
+
+        while atual.direita:
+
+            atual = atual.direita
+
+        return atual.paciente
+
     def em_ordem_inversa(self):
         resultado = []
 

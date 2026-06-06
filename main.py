@@ -170,6 +170,44 @@ tempo_avl_ordem = (
     fim - inicio
 ) * 1000
 
+# =========================
+# PACIENTE PRIORITÁRIO
+# =========================
+
+# Heap
+inicio = time.perf_counter()
+
+paciente_heap = ordem_heap[0]
+
+fim = time.perf_counter()
+
+tempo_heap_prioritario = (
+    fim - inicio
+) * 1000
+
+
+# ABB
+inicio = time.perf_counter()
+
+paciente_abb = abb.maior()
+
+fim = time.perf_counter()
+
+tempo_abb_prioritario = (
+    fim - inicio
+) * 1000
+
+
+# AVL
+inicio = time.perf_counter()
+
+paciente_avl = avl.maior()
+
+fim = time.perf_counter()
+
+tempo_avl_prioritario = (
+    fim - inicio
+) * 1000
 
 # =========================
 # GERAR ORDEM_ATENDIMENTO.TXT
@@ -259,6 +297,7 @@ print("\n===== RESULTADOS =====\n")
 print("HEAP")
 print(f"Inserção: {tempo_heap_insercao:.4f} ms")
 print(f"Ordem: {tempo_heap_ordem:.4f} ms")
+print(f"Prioritário: {tempo_heap_prioritario:.6f} ms")
 print(f"Comparações: {heap.comparacoes}")
 
 print()
@@ -266,6 +305,7 @@ print()
 print("ABB")
 print(f"Inserção: {tempo_abb_insercao:.4f} ms")
 print(f"Ordem: {tempo_abb_ordem:.4f} ms")
+print(f"Prioritário: {tempo_abb_prioritario:.6f} ms")
 print(f"Comparações: {abb.comparacoes}")
 print(f"Altura: {abb.altura()}")
 
@@ -274,6 +314,7 @@ print()
 print("AVL")
 print(f"Inserção: {tempo_avl_insercao:.4f} ms")
 print(f"Ordem: {tempo_avl_ordem:.4f} ms")
+print(f"Prioritário: {tempo_avl_prioritario:.6f} ms")
 print(f"Comparações: {avl.comparacoes}")
 print(f"Altura: {avl.altura()}")
 print(f"Rotações: {avl.rotacoes}")

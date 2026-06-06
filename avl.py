@@ -293,3 +293,13 @@ class AVL:
     def altura(self):
 
         return self.altura_no(self.raiz)
+    
+    def maior(self):
+
+        atual = self.raiz
+
+        while atual.direita:
+
+            atual = atual.direita
+
+        return atual.paciente
